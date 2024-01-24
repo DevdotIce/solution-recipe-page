@@ -1,0 +1,333 @@
+/* <!-- Feel free to remove these styles or customise in your own stylesheet 👍 --> */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    width: 100vw;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+#recipe {
+    background-color: hsl(0, 0%, 100%);
+    margin: calc(64px + 2vw) calc(80px + 1vh);
+    border-radius: 22px 22px 22px 22px;
+    width: 48%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+}
+
+#recipe section:nth-child(1){
+    align-self: center;
+    justify-self: center;
+    margin: 1.8em 0 -1.5em 0;
+    width: 88.5%;
+    overflow: hidden;
+}
+
+#top-image > img {
+    border-radius: 18px 18px 18px 18px;
+    width: 100%;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<  Title  >>>>>>>>>>>>>>>>>>>>> */
+#recipe section:nth-child(2){  
+    align-self: center;
+    justify-self: center;
+    margin-top: 3rem;
+    width: 90%;
+    display: flex;
+    flex-flow: column;
+}
+
+#title > h1 {
+    font-size: calc( 16px + 1.75vw);
+    font-weight: 400;
+    color: hsl(24, 5%, 18%);
+}
+
+#title > p {
+    font-size: calc(18px + .07vw);
+    font-weight: 400;
+    color: hsl(24, 5%, 18%);
+}
+
+
+/*!!!!!!!!!!!!!!!!! PREPARATION TIME!!!!!!!!!!!!!!!!! */
+
+#recipe section:nth-child(3){
+    align-self: center;
+    justify-self: center;
+    background-color: hsl(330, 100%, 98%);
+    
+    border-radius: 18px 18px 18px 18px;
+    margin: 1.8em auto -1.5em auto;
+    width: 90%;
+    padding: 1.2rem 1.5rem;
+}
+
+#preparation-time h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: hsl(332, 51%, 32%);
+}
+
+#preparation-time ul {
+    padding-left: 1.5rem;
+    list-style-type: none;
+}
+
+#preparation-time li {
+    color: hsl(30, 10%, 34%);
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    padding-left: 17px;
+    padding-top: .8rem;
+}
+
+#preparation-time li::before {
+    color: hsl(332, 51%, 32%);
+    content: '\2022';
+    font-size: 1.5em;
+    position: absolute;
+    top: 8px;
+    left: -19px;
+}
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!Ingredients!!!!!!!!!!!!!!!!!!!!! */
+
+#recipe section:nth-child(4){
+    align-self: center;
+    justify-self: center;
+    margin-top: 3rem;
+    width: 90%;
+    
+}
+
+#ingredients h2 {
+    font-weight: 400;
+    color: hsl(14, 45%, 36%);
+}
+
+#ingredients ul {
+    padding-top: .15rem;
+    padding-left: 1.5rem;
+    list-style-type: none;
+}
+
+#ingredients li {
+    color: hsl(30, 10%, 34%);
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    padding-left: 10px;
+    padding-top: .8rem;
+}
+
+#ingredients li::before {
+    color: hsl(14, 45%, 36%);
+    content: '\2022';
+    font-size: 1.5rem;
+    position: absolute;
+    top: 9px;
+    left: -18px;
+}
+
+
+#recipe section:nth-child(5){
+    align-self: center;
+    justify-self: center;
+    margin: 1.5rem auto;
+    width: 90%;
+    
+}
+
+
+#divider hr {
+    height: 1px;
+    border: none;
+    background-color: hsl(30, 18%, 87%);
+    width: 100%;
+}
+
+
+
+
+/* Instructions Sections*/
+
+#recipe section:nth-child(6){ 
+    align-self: center;
+    justify-self: center;
+    width: 90%;
+}
+
+
+#instructions h2 {
+    font-weight: 400;
+    color: hsl(14, 45%, 36%);
+}
+
+#instructions ol {
+    padding-top: .15rem;
+    padding-left: 1.5rem;
+}
+
+#instructions li {
+    color: hsl(30, 10%, 34%);
+    font-size: 16px;
+    padding-left: 12px;
+    padding-top: .8rem;
+}
+
+#instructions li::marker {
+    /* Example styles for the marker (limited browser support) */
+    color: hsl(14, 45%, 36%);
+    font-weight: 1000;
+    font-size: .9em;
+    /* Additional styles can be applied as per browser support */
+}
+
+
+
+#recipe section:nth-child(7){
+    align-self: center;
+    justify-self: center;
+    margin: 1.8rem auto;
+    width: 90%;
+    
+}
+
+
+.divider hr {
+    height: 1px;
+    border: none;
+    background-color: hsl(30, 18%, 87%);
+    width: 100%;
+}
+
+
+#recipe section:nth-child(8){
+    align-self: center;
+    justify-self: center;
+    width: 90%;
+}
+
+#nutrition h2{
+    color: hsl(14, 45%, 36%);
+    font-weight: 400;
+}
+
+#nutrition p{
+    color: hsl(30, 10%, 34%);
+    margin: 1rem 0;
+    font-weight: 400;
+}
+
+table#nutrition-facts {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  table#nutrition-facts td {
+    padding: 10px 20px;
+  }
+  table#nutrition-facts tbody td {
+    font-size: 1rem;
+  }
+
+  table#nutrition-facts tr {
+    border-bottom: 1px solid #ccc;
+  }
+
+  table#nutrition-facts tr:last-child {
+    border-bottom: none;
+  }
+
+  table#nutrition-facts td:nth-child(2) {
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+  }
+
+  table#nutrition-facts td:nth-child(1) {
+    font-weight: 400;
+  }
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+#ingredients h2, 
+#title h1, 
+#instructions h2,
+#nutrition h2 {
+    font-family: 'Young serif', sans-serif;
+}
+
+
+
+#title > p, 
+#recipe section:nth-child(3), 
+#ingredients ul,
+#instructions li, #nutrition p,table#nutrition-facts {
+    font-family: 'Outfit', sans-serif;
+
+}
+
+
+@media screen and (max-width: 900px ) {
+    body {
+        background-color: #fff;
+    }
+
+    #top-image > img {
+        width: 100vw;
+    }
+
+    #recipe {
+        margin: 0;
+        width: 100vw;
+        display: flex;
+        flex-flow: column;
+        border-radius: 0;
+    }
+
+    #recipe section:nth-child(1) {
+        margin: 0 0 -1.5em 0;
+        width: 100vw;
+        
+    }
+
+    #top-image > img {
+        width: 100vw;
+        border-radius: 0;
+    }
+
+    #title > h1 {
+        font-size: calc( 16px + 4vw);
+        line-height: 1.1;
+    }
+
+    #title > p {
+        font-size: calc(16px + .2vw);
+    }
+
+}
